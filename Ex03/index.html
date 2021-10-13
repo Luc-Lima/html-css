@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem flexível</title>
+</head>
+<body>
+    <h1>Usando novos recursos do html5</h1>
+    <p>Além do CSS e Java é possível também utilizar tags especiais para controlar o tamanho das imagens
+        dependendo do aparelho eletrônico que estamos usando.
+    </p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/imagem-320.JPG" type="image/JPG">
+        <source media="(max-width: 1050px)" srcset="imagens/imagem-750.JPG" type="image/JPG">
+        <img src="imagens/imagem-ful.JPG" alt="Andando de bicicleta">
+    </picture>
+    <h1>Uso de áudios nos sites</h1>
+    <p>Aqui tenho uma pergunta interessante, será que para cada parágrafo existe uma tag de audio no site jw.</p>
+    <audio preload="metadata" controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+    </audio>
+    <h1>Agora é hora de aprender sobre Vídeos</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video width="560" controls poster="imagens/limoes-capa.png">
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.m4v" type="video/mp4">
+        <source src="midia/Meu-Video.webm" type="video/webm">
+        <source src="midia/meu-video.ogv" type="video/ogb">
+        <p>Seu navegador não tem compatibilidade com videos.</p>
+    </video>
+    <h1>Uso do iframe</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/T-d_hsO3hUI?start=120" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</html>
