@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomia de tabela</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 400px;
+        }
+        caption {
+            font-size: 1.1em;
+            background-color: gainsboro;
+            padding: 10px;
+            font-weight: bold;
+        }
+        td, th {
+            border:1px solid black;
+            padding: 10px;
+        }
+        thead, tfoot {
+            background-color: gray; 
+            color: rgb(222, 226, 222);
+        }
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Anatomia de tabelas</h1>
+    <!--
+        A anatomia das tabelas consiste eim:
+
+        Table 
+            Thead
+                tr (table row)
+                    td (table data), th(table header) 
+            Tbody
+            Tfoot
+    -->
+    <table>
+        <caption>Número de voluntários nos últimos meses</caption>
+        <thead>
+            <tr>
+                <th scope="col">Departamento</th>
+                <th scope="col">Número de Voluntários</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Fazenda</td>
+                <td class="num">5</td>
+            </tr>
+            <tr>
+                <td>Serviços Prediais</td>
+                <td class="num">20</td>
+            </tr>
+            <tr>
+                <td>Manutenção</td>
+                <td class="num">12</td>
+            </tr>
+            <tr>
+                <td>Expedição</td>
+                <td class="num">7</td>
+            </tr>
+            <tr>
+                <td>Engenharia</td>
+                <td class="num">8</td>
+            </tr>
+            <tr>
+                <td>Serviços Médicos</td>
+                <td class="num">10</td>
+            </tr>
+            <tr>
+                <td>Alimentação</td>
+                <td class="num">56</td>
+            </tr>
+            <tr>
+                <td>Arquivo Histórico</td>
+                <td class="num">20</td>
+            </tr>
+            <tr>
+                <td>Brigada de Incêndios</td>
+                <td class="num">12</td>
+            </tr>
+        </tbody>
+           
+        <tfoot>
+            <tr>
+                <th scope="row">Total</th>
+                <td class="num">150</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
