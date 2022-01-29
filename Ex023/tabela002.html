@@ -12,12 +12,18 @@
         table {
             border-collapse: collapse;
             width: 400px;
+            position: relative;
         }
         caption {
             font-size: 1.1em;
             background-color: gainsboro;
             padding: 10px;
             font-weight: bold;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: grey ;
         }
         td, th {
             border:1px solid black;
@@ -26,6 +32,10 @@
         thead, tfoot {
             background-color: gray; 
             color: rgb(222, 226, 222);
+        }
+        tbody > tr:nth-child(even) {
+            background-color: gray;
+            color: white;
         }
         td.num {
             text-align: right;
@@ -79,6 +89,26 @@
             </tr>
             <tr>
                 <td>Alimentação</td>
+                <td class="num">56</td>
+            </tr>
+            <tr>
+                <td>HID</td>
+                <td class="num">23</td>
+            </tr>
+            <tr>
+                <td>HCD</td>
+                <td class="num">14</td>
+            </tr>
+            <tr>
+                <td>Elétrica</td>
+                <td class="num">35</td>
+            </tr>
+            <tr>
+                <td>Mecânica</td>
+                <td class="num">75</td>
+            </tr>
+            <tr>
+                <td>Jurídico</td>
                 <td class="num">56</td>
             </tr>
             <tr>
